@@ -76,7 +76,7 @@ nav .wrapper {
 }
 
 nav.scroll {
-    background-color: var(--primary-color);
+    background:hsl(146, 47%, 25%);
     transition: 0.2s;
 }
 
