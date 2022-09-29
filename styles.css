@@ -45,8 +45,76 @@ body {
     height: 11.5rem;
 }
 
+.button {
+    background-color: rgba(255, 255, 255, 0.150);
+  
+    border: none;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+    padding: 1.5rem 3rem;
+    width: fit-content;
+  
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    letter-spacing: .2rem;
+  
+    text-decoration: none;
+  
+    transition: background 200ms;
+}
+
 ul {
     list-style: none;
+}
+
+section {
+    padding-block: 8rem;
+}
+  
+section header h4 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.3rem;
+  
+    color: #fff;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+  
+section header h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  
+    color: #fff;
+}
+  
+section header h1 {
+    font-size: 2.3rem;
+    color: #fff;
+    line-height: 140%;
+    font-weight: 500;
+  
+    margin-bottom: 1rem;
+}
+  
+section .content p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 150%;
+  
+    color: #fff;
 }
 
 /* NAVIGATION */
@@ -178,64 +246,53 @@ body.menu-expanded button {
     z-index: 100;
 }
 
-/* ABOUT */
+/* HOME */
 
-#about {
+#home {
     padding-block: 0;
-    padding-top: calc(6rem + var(--nav-heigth));
+    padding-top: calc(4.1rem + var(--nav-heigth));
 }
 
-#about img {
-    margin-top: 2rem;
+#home .slider {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     margin-inline: auto;
+
+    width: 40rem;
+    max-width: 100%;
+    height: 38rem;
+    max-height: 100%;
+
+    position: relative;
+}
+
+#home .slider img { 
+    opacity: 0;
+    position: absolute;
+
     border-radius: 1.5rem;
 
     width: 100%;
     height: 100%;
 
+    margin-inline: auto;
+
+
+    transition: opacity 800ms;
 }
 
-#about p {
-    font-size: 2rem;
-    line-height: 150%;
-    font-weight: 400;
-    padding: 1rem;
-    color: #fff;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.250);
-    border-radius: 1rem;
-  
-    margin-bottom: 1rem;
+#home .slider img.selected {
+    opacity: 1;
 }
 
-#about h1 {
-    font-size: 5rem;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: .3rem;
-    text-align: center;
 
-}
 
-#about h4 {
-    margin-top: 1rem;
-    font-size: 2.2rem;
-    text-align: center;
-    color: #fff;
-    font-weight: 400;
-    line-height: 2.5rem;
-}
 
-#about h3 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.250);
-    border-radius: 1.5rem;
-    color: #fff;
-    padding: 1rem;
-    font-weight: 400;
-}
+
+
 
 
 
