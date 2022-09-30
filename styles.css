@@ -288,6 +288,48 @@ body.menu-expanded button {
     opacity: 1;
 }
 
+#home p {
+    font-size: 1.2rem;
+    line-height: 130%;
+    font-weight: 400;
+    color: #fff;
+  
+    margin-bottom: 3.2rem;
+}
+
+#home .stats {
+    width: 100%;
+    padding-block: 4rem;
+    margin-inline: auto;
+    margin-top: 5rem;
+  
+    background-color: none;
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#home .stat h3 {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 100%;
+  
+    margin-bottom: 0.5rem;
+}
+
+  #home .stat p {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: 1.5rem;
+    line-height: 150%;
+    text-transform: uppercase;
+}
 
 
 
@@ -296,3 +338,5 @@ body.menu-expanded button {
 
 
 
+
+ 
