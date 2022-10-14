@@ -1,5 +1,5 @@
 
-let time = 4500,
+let time = 4900,
 currentImageIndex = 0,
 images = document.querySelectorAll('#home .slider img'),
 max = images.length;
@@ -104,4 +104,6 @@ duration: 975
 #about header,
 #about content,
 #contact`)
+
+
 
