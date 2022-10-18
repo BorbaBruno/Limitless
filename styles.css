@@ -272,7 +272,7 @@
   }
 
   #home p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 150%;
     font-weight: 500;
     color: #fff;
@@ -309,7 +309,7 @@
     color: #fff;
     font-size: 1.8rem;
     letter-spacing: .2rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 100%;
     text-transform: uppercase;
   }
@@ -351,44 +351,57 @@
 
   /* ========== PRODUTOS ========== */
 
-  #products header h2 {
-    margin-bottom: 6rem;
+  #project header h2 {
+    margin-bottom: 5rem;
   }
   
-  #products .cards {
+  #project p {
+    margin: 0;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+
+  #project .col-b {
+    margin-top: 5rem;
+  }
+
+  #project .slider2 {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  
-  #products .card {
-    padding: 2rem;
-    background: none;
-  
-    border: 1px solid #fff;
-    border-radius: 1rem;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-inline: auto;
+
+    width: 40rem;
+    max-width: 100%;
+    height: 40rem;
+    max-height: 100%;
+
+    position: relative;
   }
 
-  #products .card p {
-    text-align: left;
+  #project .slider2 img { 
+    opacity: 0;
+    position: absolute;
+
+    border-radius: 1.5rem;
+
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+
+    margin-inline: auto;
+
+
+    transition: opacity 800ms;
   }
 
-  #products .card h2 {
-    margin-block: 2rem;
-    color: #fff;
-    font-size: 1.5rem;
-  }
-  
-  #products .card h3 {
-    margin-block: 2rem;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  #products .card img {
-    width: 20rem;
-    height: 20rem;
-    margin-bottom: 1.5rem;
+  #project .slider2 img.selected2 {
+    opacity: 1;
   }
 
   /* ========== ABOUT ========== */

@@ -4,6 +4,14 @@ currentImageIndex = 0,
 images = document.querySelectorAll('#home .slider img'),
 max = images.length;
 
+let time2 = 4900,
+currentImageIndex2 = 0,
+images2 = document.querySelectorAll('#project .slider2 img'),
+max2 = images2.length;
+
+
+
+
 window.addEventListener('load', start)
 
 function nextImage() {
@@ -18,9 +26,23 @@ if(currentImageIndex >= max)
 images[currentImageIndex].classList.add('selected')
 }
 
+function nextImage2() {
+
+    images2[currentImageIndex2].classList.remove('selected2')
+    
+    currentImageIndex2++
+    
+    if(currentImageIndex2 >= max2)
+        currentImageIndex2 = 0
+    
+    images2[currentImageIndex2].classList.add('selected2')
+}
+    
+
 function start() {
 setInterval(() => {
     nextImage()
+    nextImage2()
 }, time)
 }
 
@@ -29,7 +51,7 @@ showNavOnScroll()
 showBackToTopButtonOnScroll()
 
 activateMenuAtCurrentSection(home)
-activateMenuAtCurrentSection(products)
+activateMenuAtCurrentSection(project)
 activateMenuAtCurrentSection(about)
 activateMenuAtCurrentSection(contact)
 }
