@@ -45,7 +45,7 @@
   }
   
   section {
-    padding-block: 8rem;
+    padding-block: 5rem;
   }
   
   section header h4 {
@@ -326,7 +326,7 @@
 
   #home .stats {
     width: 100%;
-    padding-block: 5rem;
+    padding-block: 3rem;
     margin-inline: auto;
     margin-top: 6rem;
   
@@ -416,7 +416,7 @@
   }
 
   #project .col-b {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 
   #project .slider2 {
@@ -460,6 +460,15 @@
   #about {
     text-align: center;
     background-color: none;
+
+    margin-top: -5rem;
+  }
+
+  #about .wrapper {
+    background-color: rgba(0, 0, 0, 0.250);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 4rem;
   }
   
   #about header h2 {
@@ -467,12 +476,12 @@
     font-size: 2.5rem;
   }
   
-  #about  .content p {
+  #about .content p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: #fff;
     font-weight: 100;
   }
 
