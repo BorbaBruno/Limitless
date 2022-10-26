@@ -316,7 +316,7 @@
   }
 
   #home p {
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 150%;
     font-weight: 500;
     color: rgb(255, 255, 255);
@@ -351,7 +351,7 @@
   #home .stat p {
     margin: 0;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
     font-weight: 600;
     line-height: 100%;
@@ -476,20 +476,23 @@
     font-size: 2.5rem;
   }
   
-  #about .content p {
+  #about p {
     margin-top: 1.5rem;
+    line-height: 120%;
     margin-bottom: 1.5rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: #fff;
-    font-weight: 100;
+    font-weight: 500;
   }
 
   #about img {
     width: 70%;
     height: 70%;
-    margin-top: 10rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
+
+    border-radius: 4rem;
 
     object-fit: contain;
   }
