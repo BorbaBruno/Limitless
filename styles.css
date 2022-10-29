@@ -501,11 +501,20 @@
 
   #contact {
     text-align: center;
-    color: var(--secondary-color);
+    color: #FFF;
+
+    margin-top: -5rem;
+  }
+
+  #contact .wrapper {
+      background-color: rgba(0, 0, 0, 0.250);
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      border-radius: 4rem;
   }
   
   #contact header {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   
   #contact ul {

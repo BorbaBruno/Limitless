@@ -1,4 +1,3 @@
-
 let time = 4900,
 currentImageIndex = 0,
 images = document.querySelectorAll('#home .slider img'),
@@ -8,9 +7,6 @@ let time2 = 4900,
 currentImageIndex2 = 0,
 images2 = document.querySelectorAll('#project .slider2 img'),
 max2 = images2.length;
-
-
-
 
 window.addEventListener('load', start)
 
@@ -37,6 +33,14 @@ function nextImage2() {
     
     images2[currentImageIndex2].classList.add('selected2')
 }
+
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 400) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
     
 
 function start() {
@@ -49,6 +53,7 @@ setInterval(() => {
 function onScroll() {
     showNavOnScroll()
     showBackToTopButtonOnScroll()
+
 
     activateMenuAtCurrentSection(home)
     activateMenuAtCurrentSection(project)
@@ -91,14 +96,6 @@ function showNavOnScroll() {
     }
 }
 
-    function showBackToTopButtonOnScroll() {
-    if (scrollY > 400) {
-    backToTopButton.classList.add('show')
-    } else {
-    backToTopButton.classList.remove('show')
-    }
-}
-
 function openMenu() {
     document.body.classList.add('menu-expanded')
 }
@@ -113,18 +110,18 @@ onScroll()
 ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 975
+    duration: 1000
     }).reveal(`
-    #home, 
+    #home,
     #home img, 
-    #home 
-    .stats, 
-    #products,
-    #products header,
-    #products .card,
+    #home .stats,
+    #project,
+    #project img,
+    #project header,
+    #project,
     #about,
+    #about img,
     #about header,
-    #about content,
     #contact`)
 
 
