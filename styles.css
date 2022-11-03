@@ -640,7 +640,10 @@ footer p {
 
   nav#navegacao .menu ul li a {
     color: #fff;
-    opacity: 0.9;
+  }
+
+  nav#navegacao .menu ul li a:hover {
+    opacity: 0.5;
   }
 
   nav#navegacao .menu li a {
